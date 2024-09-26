@@ -1,0 +1,15 @@
+create database system;
+
+create table admin (username varchar(100),password varchar(100));
+
+create table categories (category_name varchar(100),table_name varchar(100));
+
+create table cart (product_name varchar(255),price int);
+
+create table orders (order_id varchar(100),customer_name varchar(100),item_name varchar(100),quantity int, price int, order_date timestamp);
+
+create table order_records (order_id varchar(100),customer_name varchar(100),item_name varchar(100),quantity int, price int, date_delivered timestamp);
+
+create table fruits_table (product_name varchar(100), price int, stock int, img varchar(255));
+
+create table clothes_table (product_name varchar(100), price int, stock int, img varchar(255));
